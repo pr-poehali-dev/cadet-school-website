@@ -6,29 +6,7 @@ import Icon from "@/components/ui/icon";
 const Courses = () => {
   const navigate = useNavigate();
 
-  const renderChevrons = (count: number) => {
-    return (
-      <div className="flex flex-col gap-[2px] items-center">
-        {Array.from({ length: count }).map((_, i) => (
-          <div
-            key={i}
-            className="relative w-10 h-3"
-            style={{
-              clipPath: 'polygon(0 0, 50% 100%, 100% 0, 85% 0, 50% 70%, 15% 0)'
-            }}
-          >
-            <div className="absolute inset-0 bg-yellow-400" />
-            <div
-              className="absolute inset-0 bg-blue-900"
-              style={{
-                clipPath: 'polygon(5% 10%, 50% 85%, 95% 10%, 85% 10%, 50% 65%, 15% 10%)'
-              }}
-            />
-          </div>
-        ))}
-      </div>
-    );
-  };
+
 
   const courses = [
     {
@@ -38,7 +16,7 @@ const Courses = () => {
       description: "Младший курс. Начало кадетского пути",
       duties: ["Изучение устава", "Строевая подготовка", "Знакомство с традициями"],
       icon: "Sprout",
-      image: "https://cdn.poehali.dev/projects/5ab1ca79-89ee-436c-8590-f09348eeba70/files/5beba552-4ec1-4a35-867c-748a5bb97f48.jpg",
+
     },
     {
       number: 2,
@@ -47,7 +25,7 @@ const Courses = () => {
       description: "Младший курс. Начало кадетского пути",
       duties: ["Изучение устава", "Строевая подготовка", "Знакомство с традициями"],
       icon: "Sprout",
-      image: "https://cdn.poehali.dev/projects/5ab1ca79-89ee-436c-8590-f09348eeba70/files/fa428800-82e6-4bbf-8d94-654cfd908e9f.jpg",
+
     },
     {
       number: 3,
@@ -56,7 +34,7 @@ const Courses = () => {
       description: "Освоение базовых навыков",
       duties: ["Огневая подготовка", "Физическая подготовка", "Дисциплина"],
       icon: "Target",
-      image: "https://cdn.poehali.dev/projects/5ab1ca79-89ee-436c-8590-f09348eeba70/files/5cad0ae1-ae49-4f95-8cb1-f4643cea90b6.jpg",
+
     },
     {
       number: 4,
@@ -65,7 +43,7 @@ const Courses = () => {
       description: "Развитие лидерских качеств",
       duties: ["Командная работа", "Тактическая подготовка", "Наставничество младших"],
       icon: "Users",
-      image: "https://cdn.poehali.dev/projects/5ab1ca79-89ee-436c-8590-f09348eeba70/files/351690b0-70c8-400d-b516-c539246ee5fd.jpg",
+
     },
     {
       number: 5,
@@ -74,7 +52,7 @@ const Courses = () => {
       description: "Углублённая подготовка",
       duties: ["Военная топография", "Участие в школьных мероприятиях", "Подготовка к экзаменам"],
       icon: "Map",
-      image: "https://cdn.poehali.dev/projects/5ab1ca79-89ee-436c-8590-f09348eeba70/files/f3a38c13-cfde-45e3-89d0-e8ad258db8f3.jpg",
+
     },
     {
       number: 6,
@@ -83,7 +61,7 @@ const Courses = () => {
       description: "Предвыпускной курс",
       duties: ["Полевые учения", "Профориентация"],
       icon: "GraduationCap",
-      image: "https://cdn.poehali.dev/projects/5ab1ca79-89ee-436c-8590-f09348eeba70/files/0f0aa8c7-f8f5-4c6d-a072-1de599f3c61a.jpg",
+
     },
     {
       number: 7,
@@ -92,7 +70,7 @@ const Courses = () => {
       description: "Старший курс. Выпускники",
       duties: ["Итоговая аттестация", "Выбор военного ВУЗа", "Передача традиций"],
       icon: "Award",
-      image: "https://cdn.poehali.dev/projects/5ab1ca79-89ee-436c-8590-f09348eeba70/files/6801e97d-452c-4ea1-b673-74da35cedaac.jpg",
+
     },
   ];
 
@@ -121,43 +99,48 @@ const Courses = () => {
               key={course.number}
               className="border-2 overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-[1.03] group"
             >
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src={course.image}
-                  alt={`${course.number} курс`}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute bottom-4 left-4 text-white">
-                  <div className="text-6xl font-bold mb-1 opacity-90">
-                    {course.number}
+              <div className="grid md:grid-cols-3 gap-0">
+                <div
+                  className={`bg-gradient-to-br ${course.color} p-8 flex flex-col items-center justify-center text-white relative`}
+                >
+                  <div className="absolute top-4 right-4">
+                    <Icon name={course.icon} size={40} className="text-white/30" />
                   </div>
-                  <div className="text-xl font-semibold">{course.grade}</div>
-                </div>
-                <div className="absolute top-4 right-4">
-                  {renderChevrons(course.number)}
-                </div>
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-lg font-bold text-secondary mb-3">
-                  {course.description}
-                </h3>
-                <div className="space-y-2">
-                  <p className="text-sm font-semibold text-muted-foreground mb-2">
-                    Основные задачи:
-                  </p>
-                  {course.duties.map((duty, index) => (
-                    <div key={index} className="flex items-start gap-2">
-                      <Icon
-                        name="ChevronRight"
-                        size={16}
-                        className="text-primary mt-1 flex-shrink-0"
-                      />
-                      <p className="text-sm">{duty}</p>
+                  <div className="text-center">
+                    <h3 className="text-2xl font-bold mb-4">{course.number} курс</h3>
+                    <div className="flex gap-2 justify-center mb-2">
+                      {Array.from({ length: course.number }).map((_, i) => (
+                        <div
+                          key={i}
+                          className="w-3 h-12 bg-white/90 rounded-sm shadow-lg"
+                        />
+                      ))}
                     </div>
-                  ))}
+                    <p className="text-sm opacity-90 mt-2">{course.grade}</p>
+                  </div>
                 </div>
-              </CardContent>
+
+                <CardContent className="p-6 md:col-span-2">
+                  <h3 className="text-lg font-bold text-secondary mb-3">
+                    {course.description}
+                  </h3>
+                  <div className="space-y-2">
+                    <p className="text-sm font-semibold text-muted-foreground mb-2">
+                      Основные задачи:
+                    </p>
+                    {course.duties.map((duty, index) => (
+                      <div key={index} className="flex items-start gap-2">
+                        <Icon
+                          name="ChevronRight"
+                          size={16}
+                          className="text-primary mt-1 flex-shrink-0"
+                        />
+                        <p className="text-sm">{duty}</p>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </div>
             </Card>
           ))}
         </div>

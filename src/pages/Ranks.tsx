@@ -16,11 +16,6 @@ const Ranks = () => {
         "Отличная успеваемость",
         "Выполнение обязанностей дневального",
       ],
-      responsibilities: [
-        "Помощь командиру отделения",
-        "Контроль за младшими кадетами",
-        "Участие в нарядах",
-      ],
       icon: "User",
     },
     {
@@ -31,11 +26,6 @@ const Ranks = () => {
         "Стаж в звании вице-ефрейтор не менее 6 месяцев",
         "Отличная строевая подготовка",
         "Знание уставов",
-      ],
-      responsibilities: [
-        "Командование отделением",
-        "Проведение занятий с младшими",
-        "Организация внутреннего порядка",
       ],
       icon: "Users",
     },
@@ -48,11 +38,6 @@ const Ranks = () => {
         "Лидерские качества",
         "Участие в соревнованиях",
       ],
-      responsibilities: [
-        "Заместитель командира взвода",
-        "Наставничество младших сержантов",
-        "Организация учебных мероприятий",
-      ],
       icon: "Shield",
     },
     {
@@ -63,11 +48,6 @@ const Ranks = () => {
         "Выдающиеся достижения в учёбе и службе",
         "Опыт командования",
         "Рекомендация командования",
-      ],
-      responsibilities: [
-        "Старшина роты",
-        "Координация работы сержантского состава",
-        "Представление интересов кадетов",
       ],
       icon: "Crown",
     },
@@ -122,47 +102,24 @@ const Ranks = () => {
                 </div>
 
                 <CardContent className="p-6 md:col-span-2">
-                  <div className="grid md:grid-cols-2 gap-6 h-full">
-                    <div>
-                      <div className="flex items-center gap-2 mb-3">
-                        <Icon name="ClipboardCheck" size={20} className="text-primary" />
-                        <h4 className="font-bold text-lg text-secondary">
-                          Требования
-                        </h4>
-                      </div>
-                      <div className="space-y-2">
-                        {rank.requirements.map((req, i) => (
-                          <div key={i} className="flex items-start gap-2">
-                            <Icon
-                              name="CheckCircle2"
-                              size={16}
-                              className="text-primary mt-1 flex-shrink-0"
-                            />
-                            <p className="text-sm">{req}</p>
-                          </div>
-                        ))}
-                      </div>
+                  <div>
+                    <div className="flex items-center gap-2 mb-3">
+                      <Icon name="ClipboardCheck" size={20} className="text-primary" />
+                      <h4 className="font-bold text-lg text-secondary">
+                        Требования
+                      </h4>
                     </div>
-
-                    <div>
-                      <div className="flex items-center gap-2 mb-3">
-                        <Icon name="Briefcase" size={20} className="text-accent" />
-                        <h4 className="font-bold text-lg text-secondary">
-                          Обязанности
-                        </h4>
-                      </div>
-                      <div className="space-y-2">
-                        {rank.responsibilities.map((resp, i) => (
-                          <div key={i} className="flex items-start gap-2">
-                            <Icon
-                              name="ArrowRight"
-                              size={16}
-                              className="text-accent mt-1 flex-shrink-0"
-                            />
-                            <p className="text-sm">{resp}</p>
-                          </div>
-                        ))}
-                      </div>
+                    <div className="space-y-2">
+                      {rank.requirements.map((req, i) => (
+                        <div key={i} className="flex items-start gap-2">
+                          <Icon
+                            name="CheckCircle2"
+                            size={16}
+                            className="text-primary mt-1 flex-shrink-0"
+                          />
+                          <p className="text-sm">{req}</p>
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </CardContent>
