@@ -8,6 +8,17 @@ const Ranks = () => {
 
   const ranks = [
     {
+      title: "Кадет",
+      stripes: 0,
+      color: "from-gray-400 to-gray-600",
+      requirements: [
+        "Базовое звание для всех кадетов",
+        "Присваивается при поступлении",
+        "Ношение формы без лычек",
+      ],
+      icon: "UserCircle",
+    },
+    {
       title: "Вице-ефрейтор",
       stripes: 1,
       color: "from-slate-400 to-slate-600",
@@ -85,17 +96,25 @@ const Ranks = () => {
                   </div>
                   <div className="text-center">
                     <h3 className="text-2xl font-bold mb-4">{rank.title}</h3>
-                    <div className="flex gap-2 justify-center mb-2">
-                      {Array.from({ length: rank.stripes }).map((_, i) => (
-                        <div
-                          key={i}
-                          className="w-3 h-12 bg-white/90 rounded-sm shadow-lg"
-                        />
-                      ))}
-                    </div>
-                    <p className="text-sm opacity-90 mt-2">
-                      {rank.stripes} {rank.stripes === 1 ? "лычка" : "лычки"}
-                    </p>
+                    {rank.stripes > 0 ? (
+                      <>
+                        <div className="flex gap-2 justify-center mb-2">
+                          {Array.from({ length: rank.stripes }).map((_, i) => (
+                            <div
+                              key={i}
+                              className="w-3 h-12 bg-white/90 rounded-sm shadow-lg"
+                            />
+                          ))}
+                        </div>
+                        <p className="text-sm opacity-90 mt-2">
+                          {rank.stripes} {rank.stripes === 1 ? "лычка" : "лычки"}
+                        </p>
+                      </>
+                    ) : (
+                      <p className="text-sm opacity-90 mt-2">
+                        Без лычек
+                      </p>
+                    )}
                   </div>
                 </div>
 
