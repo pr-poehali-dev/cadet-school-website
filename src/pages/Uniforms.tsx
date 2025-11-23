@@ -121,6 +121,12 @@ const Uniforms = () => {
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
                   <p className="text-base leading-relaxed">
+                    <span className="font-semibold">Ремень:</span> белый офицерский
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
+                  <p className="text-base leading-relaxed">
                     <span className="font-semibold">Фуражка:</span> парадная синяя с чёрным козырьком и кокардой
                   </p>
                 </div>
