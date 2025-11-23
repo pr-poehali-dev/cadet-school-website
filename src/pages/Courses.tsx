@@ -19,38 +19,46 @@ const Courses = () => {
       number: 2,
       grade: "6 класс",
       color: "from-blue-400 to-blue-600",
-      description: "Освоение базовых навыков",
-      duties: ["Огневая подготовка", "Физическая подготовка", "Дисциплина"],
-      icon: "Target",
+      description: "Младший курс. Начало кадетского пути",
+      duties: ["Изучение устава", "Строевая подготовка", "Знакомство с традициями"],
+      icon: "Sprout",
     },
     {
       number: 3,
       grade: "7 класс",
       color: "from-purple-400 to-purple-600",
-      description: "Развитие лидерских качеств",
-      duties: ["Командная работа", "Тактическая подготовка", "Наставничество младших"],
-      icon: "Users",
+      description: "Освоение базовых навыков",
+      duties: ["Огневая подготовка", "Физическая подготовка", "Дисциплина"],
+      icon: "Target",
     },
     {
       number: 4,
       grade: "8 класс",
       color: "from-orange-400 to-orange-600",
+      description: "Развитие лидерских качеств",
+      duties: ["Командная работа", "Тактическая подготовка", "Наставничество младших"],
+      icon: "Users",
+    },
+    {
+      number: 5,
+      grade: "9 класс",
+      color: "from-indigo-400 to-indigo-600",
       description: "Углублённая подготовка",
       duties: ["Военная топография", "Медицинская подготовка", "Радиосвязь"],
       icon: "Map",
     },
     {
-      number: 5,
-      grade: "9 класс",
-      color: "from-red-400 to-red-600",
+      number: 6,
+      grade: "10 класс",
+      color: "from-amber-400 to-amber-600",
       description: "Предвыпускной курс",
       duties: ["Подготовка к экзаменам", "Полевые учения", "Профориентация"],
       icon: "GraduationCap",
     },
     {
-      number: 6,
+      number: 7,
       grade: "11 класс",
-      color: "from-amber-400 to-amber-600",
+      color: "from-red-400 to-red-600",
       description: "Старший курс. Выпускники",
       duties: ["Итоговая аттестация", "Выбор военного ВУЗа", "Передача традиций"],
       icon: "Award",
@@ -73,7 +81,7 @@ const Courses = () => {
           Курсовки
         </h1>
         <p className="text-muted-foreground text-center mb-12 text-lg">
-          Система курсов кадетской школы: от 1 курса (5 класс) до 6 курса (11 класс)
+          Система курсов кадетской школы: от 1 курса (5 класс) до 7 курса (11 класс)
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -142,7 +150,7 @@ const Courses = () => {
                     </p>
                   </div>
                   <div>
-                    <p className="font-semibold text-primary mb-2">Старшие курсы (5-6):</p>
+                    <p className="font-semibold text-primary mb-2">Старшие курсы (5-7):</p>
                     <p className="text-sm text-muted-foreground">
                       Подготовка к поступлению в военные ВУЗы, наставничество младших курсов
                     </p>

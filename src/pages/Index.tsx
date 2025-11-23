@@ -24,7 +24,7 @@ const Index = () => {
     },
     {
       title: "Курсовки",
-      description: "Система курсов: 1-6 курс (5-11 класс)",
+      description: "Система курсов: 1-7 курс (5-11 класс)",
       icon: "GraduationCap",
       color: "from-green-500 to-green-700",
       path: "/courses",
