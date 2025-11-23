@@ -135,6 +135,58 @@ const Chevrons = () => {
           </Card>
         </div>
 
+        <h2 className="text-3xl font-bold text-secondary mb-6 flex items-center gap-3">
+          <Icon name="Tag" size={28} className="text-primary" />
+          Нагрудные нашивки
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <Card className="overflow-hidden border-2 shadow-xl">
+            <div className="bg-gradient-to-br from-primary/10 to-primary/5 p-6">
+              <h2 className="text-xl font-bold text-secondary flex items-center gap-3">
+                <Icon name="Badge" size={24} className="text-primary" />
+                Левый нагрудный карман
+              </h2>
+            </div>
+            <CardContent className="p-6">
+              <div className="rounded-lg overflow-hidden h-40 mb-4">
+                <img 
+                  src="https://cdn.poehali.dev/files/41381a89-f95f-40c6-909a-7a2e1432f91f.jpg" 
+                  alt="Нашивка ГБОУ СОШ №145" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <p className="text-center text-base font-semibold text-secondary mb-2">
+                Нашивка «ГБОУ СОШ №145»
+              </p>
+              <p className="text-center text-muted-foreground text-sm">
+                Пришивается на левый нагрудный карман
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="overflow-hidden border-2 shadow-xl">
+            <div className="bg-gradient-to-br from-accent/10 to-accent/5 p-6">
+              <h2 className="text-xl font-bold text-secondary flex items-center gap-3">
+                <Icon name="UserCircle" size={24} className="text-accent" />
+                Правый нагрудный карман
+              </h2>
+            </div>
+            <CardContent className="p-6">
+              <div className="bg-gray-100 rounded-lg flex items-center justify-center h-40 mb-4">
+                <p className="text-muted-foreground text-sm">Место для фото</p>
+              </div>
+              <p className="text-center text-base font-semibold text-secondary mb-2">
+                Нашивка с ФИО
+              </p>
+              <p className="text-center text-muted-foreground text-sm">
+                Пришивается на правый нагрудный карман<br />
+                <span className="font-medium">Пример: Антонов М.И.</span>
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+
         <Card className="mb-8 border-2 hover:shadow-xl transition-shadow">
           <CardContent className="p-6">
             <div className="flex items-center gap-3 mb-4">
