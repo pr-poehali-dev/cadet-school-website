@@ -25,7 +25,12 @@ const Chevrons = () => {
           Правила размещения и пришивания шевронов на форме
         </p>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <h2 className="text-3xl font-bold text-secondary mb-6 flex items-center gap-3">
+          <Icon name="Award" size={28} className="text-primary" />
+          Парадная форма
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
           <Card className="overflow-hidden border-2 shadow-xl">
             <div className="bg-gradient-to-br from-primary/10 to-primary/5 p-6">
               <h2 className="text-xl font-bold text-secondary flex items-center gap-3">
@@ -64,6 +69,53 @@ const Chevrons = () => {
                   alt="Шеврон школы №145" 
                   className="w-full h-full object-contain"
                 />
+              </div>
+              <p className="text-center text-base font-semibold text-secondary mb-2">
+                Правое плечо
+              </p>
+              <p className="text-center text-muted-foreground text-sm">
+                Шеврон школы №145
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+
+        <h2 className="text-3xl font-bold text-secondary mb-6 flex items-center gap-3">
+          <Icon name="User" size={28} className="text-accent" />
+          Повседневная форма
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <Card className="overflow-hidden border-2 shadow-xl">
+            <div className="bg-gradient-to-br from-primary/10 to-primary/5 p-6">
+              <h2 className="text-xl font-bold text-secondary flex items-center gap-3">
+                <Icon name="ShieldCheck" size={24} className="text-primary" />
+                Шеврон ФСО
+              </h2>
+            </div>
+            <CardContent className="p-6">
+              <div className="bg-gray-100 rounded-lg flex items-center justify-center h-64 mb-4">
+                <p className="text-muted-foreground text-sm">Место для фото</p>
+              </div>
+              <p className="text-center text-base font-semibold text-secondary mb-2">
+                Левое плечо
+              </p>
+              <p className="text-center text-muted-foreground text-sm">
+                Шеврон Федеральной службы охраны Российской Федерации
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="overflow-hidden border-2 shadow-xl">
+            <div className="bg-gradient-to-br from-accent/10 to-accent/5 p-6">
+              <h2 className="text-xl font-bold text-secondary flex items-center gap-3">
+                <Icon name="School" size={24} className="text-accent" />
+                Школьный шеврон
+              </h2>
+            </div>
+            <CardContent className="p-6">
+              <div className="bg-gray-100 rounded-lg flex items-center justify-center h-64 mb-4">
+                <p className="text-muted-foreground text-sm">Место для фото</p>
               </div>
               <p className="text-center text-base font-semibold text-secondary mb-2">
                 Правое плечо
