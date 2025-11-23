@@ -83,9 +83,9 @@ const Uniforms = () => {
             </div>
             <CardContent className="p-6">
               <img
-                src="https://cdn.poehali.dev/projects/5ab1ca79-89ee-436c-8590-f09348eeba70/files/80b517f2-b670-4100-8a64-26409f8d6796.jpg"
+                src="https://cdn.poehali.dev/files/98c4425c-7451-4478-94e9-826501d5bee2.jpg"
                 alt="Парадная форма"
-                className="w-full h-80 object-cover rounded-lg mb-6 shadow-lg"
+                className="w-full h-auto object-contain rounded-lg mb-6 shadow-lg"
               />
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
