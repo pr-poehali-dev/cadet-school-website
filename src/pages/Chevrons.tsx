@@ -173,15 +173,19 @@ const Chevrons = () => {
               </h2>
             </div>
             <CardContent className="p-6">
-              <div className="bg-gray-100 rounded-lg flex items-center justify-center h-40 mb-4">
-                <p className="text-muted-foreground text-sm">Место для фото</p>
+              <div className="rounded-lg overflow-hidden h-40 mb-4">
+                <img 
+                  src="https://cdn.poehali.dev/files/761ec2b0-df94-4440-9184-da5a8751b240.jpg" 
+                  alt="Нашивка Федяев Н.И." 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <p className="text-center text-base font-semibold text-secondary mb-2">
                 Нашивка с ФИО
               </p>
               <p className="text-center text-muted-foreground text-sm">
                 Пришивается на правый нагрудный карман<br />
-                <span className="font-medium">Пример: Антонов М.И.</span>
+                <span className="font-medium">Пример: Федяев Н.И.</span>
               </p>
             </CardContent>
           </Card>
