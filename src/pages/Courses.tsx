@@ -14,6 +14,7 @@ const Courses = () => {
       description: "Младший курс. Начало кадетского пути",
       duties: ["Изучение устава", "Строевая подготовка", "Знакомство с традициями"],
       icon: "Sprout",
+      image: "https://cdn.poehali.dev/projects/5ab1ca79-89ee-436c-8590-f09348eeba70/files/5beba552-4ec1-4a35-867c-748a5bb97f48.jpg",
     },
     {
       number: 2,
@@ -22,6 +23,7 @@ const Courses = () => {
       description: "Младший курс. Начало кадетского пути",
       duties: ["Изучение устава", "Строевая подготовка", "Знакомство с традициями"],
       icon: "Sprout",
+      image: "https://cdn.poehali.dev/projects/5ab1ca79-89ee-436c-8590-f09348eeba70/files/fa428800-82e6-4bbf-8d94-654cfd908e9f.jpg",
     },
     {
       number: 3,
@@ -30,6 +32,7 @@ const Courses = () => {
       description: "Освоение базовых навыков",
       duties: ["Огневая подготовка", "Физическая подготовка", "Дисциплина"],
       icon: "Target",
+      image: "https://cdn.poehali.dev/projects/5ab1ca79-89ee-436c-8590-f09348eeba70/files/5cad0ae1-ae49-4f95-8cb1-f4643cea90b6.jpg",
     },
     {
       number: 4,
@@ -38,22 +41,25 @@ const Courses = () => {
       description: "Развитие лидерских качеств",
       duties: ["Командная работа", "Тактическая подготовка", "Наставничество младших"],
       icon: "Users",
+      image: "https://cdn.poehali.dev/projects/5ab1ca79-89ee-436c-8590-f09348eeba70/files/351690b0-70c8-400d-b516-c539246ee5fd.jpg",
     },
     {
       number: 5,
       grade: "9 класс",
       color: "from-indigo-400 to-indigo-600",
       description: "Углублённая подготовка",
-      duties: ["Военная топография", "Медицинская подготовка", "Радиосвязь"],
+      duties: ["Военная топография", "Участие в школьных мероприятиях", "Подготовка к экзаменам"],
       icon: "Map",
+      image: "https://cdn.poehali.dev/projects/5ab1ca79-89ee-436c-8590-f09348eeba70/files/f3a38c13-cfde-45e3-89d0-e8ad258db8f3.jpg",
     },
     {
       number: 6,
       grade: "10 класс",
       color: "from-amber-400 to-amber-600",
       description: "Предвыпускной курс",
-      duties: ["Подготовка к экзаменам", "Полевые учения", "Профориентация"],
+      duties: ["Полевые учения", "Профориентация"],
       icon: "GraduationCap",
+      image: "https://cdn.poehali.dev/projects/5ab1ca79-89ee-436c-8590-f09348eeba70/files/0f0aa8c7-f8f5-4c6d-a072-1de599f3c61a.jpg",
     },
     {
       number: 7,
@@ -62,6 +68,7 @@ const Courses = () => {
       description: "Старший курс. Выпускники",
       duties: ["Итоговая аттестация", "Выбор военного ВУЗа", "Передача традиций"],
       icon: "Award",
+      image: "https://cdn.poehali.dev/projects/5ab1ca79-89ee-436c-8590-f09348eeba70/files/6801e97d-452c-4ea1-b673-74da35cedaac.jpg",
     },
   ];
 
@@ -90,12 +97,15 @@ const Courses = () => {
               key={course.number}
               className="border-2 overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-[1.03] group"
             >
-              <div className={`bg-gradient-to-br ${course.color} p-6 relative`}>
-                <div className="absolute top-4 right-4 w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
-                  <Icon name={course.icon} size={32} className="text-white" />
-                </div>
-                <div className="text-white">
-                  <div className="text-6xl font-bold mb-2 opacity-90">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={course.image}
+                  alt={`${course.number} курс`}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute bottom-4 left-4 text-white">
+                  <div className="text-6xl font-bold mb-1 opacity-90">
                     {course.number}
                   </div>
                   <div className="text-xl font-semibold">{course.grade}</div>
