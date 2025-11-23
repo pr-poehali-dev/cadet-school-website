@@ -47,36 +47,25 @@ const Uniforms = () => {
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
                   <p className="text-base leading-relaxed">
-                    <span className="font-semibold">Китель повседневный:</span> тёмно-синего
-                    цвета с погонами курса, нагрудными карманами
+                    <span className="font-semibold">Китель:</span> зелёный камуфляжный с погонами и нашивками на правом и левом грудном кармане
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
                   <p className="text-base leading-relaxed">
-                    <span className="font-semibold">Брюки:</span> прямого кроя, тёмно-синие,
-                    с отглаженными стрелками
+                    <span className="font-semibold">Брюки:</span> зелёные камуфляжные
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
                   <p className="text-base leading-relaxed">
-                    <span className="font-semibold">Рубашка:</span> белая или голубая
-                    с длинным рукавом, воротник застёгнут
+                    <span className="font-semibold">Футболка:</span> зелёная
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
                   <p className="text-base leading-relaxed">
-                    <span className="font-semibold">Обувь:</span> полуботинки чёрные,
-                    начищенные до блеска
-                  </p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
-                  <p className="text-base leading-relaxed">
-                    <span className="font-semibold">Пояс:</span> чёрный кожаный с латунной
-                    пряжкой
+                    <span className="font-semibold">Обувь:</span> чёрные офицерские ботинки
                   </p>
                 </div>
               </div>
@@ -102,43 +91,37 @@ const Uniforms = () => {
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
                   <p className="text-base leading-relaxed">
-                    <span className="font-semibold">Китель парадный:</span> тёмно-синий
-                    с золотыми пуговицами, погонами со звёздами
+                    <span className="font-semibold">Китель:</span> чёрный с золотыми пуговицами и погонами с жёлтыми лычками
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
                   <p className="text-base leading-relaxed">
-                    <span className="font-semibold">Аксельбанты:</span> золотого цвета,
-                    носятся на правом плече
+                    <span className="font-semibold">Аксельбант:</span> белый, носится на правом плече
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
                   <p className="text-base leading-relaxed">
-                    <span className="font-semibold">Рубашка:</span> белоснежная с длинным
-                    рукавом, галстук тёмно-синий
+                    <span className="font-semibold">Рубашка:</span> белоснежная с длинным рукавом, галстук с зажимом
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
                   <p className="text-base leading-relaxed">
-                    <span className="font-semibold">Брюки:</span> с лампасами золотого
-                    цвета по боковым швам
+                    <span className="font-semibold">Брюки:</span> чёрные напаренные с отглаженными стрелками
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
                   <p className="text-base leading-relaxed">
-                    <span className="font-semibold">Обувь:</span> хромовые сапоги или
-                    парадные туфли, идеально начищенные
+                    <span className="font-semibold">Обувь:</span> чёрная лакированная
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
                   <p className="text-base leading-relaxed">
-                    <span className="font-semibold">Фуражка:</span> парадная с кокардой
-                    и золотым шнуром
+                    <span className="font-semibold">Фуражка:</span> парадная синяя с чёрным козырьком и кокардой
                   </p>
                 </div>
               </div>
