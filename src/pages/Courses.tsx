@@ -6,6 +6,30 @@ import Icon from "@/components/ui/icon";
 const Courses = () => {
   const navigate = useNavigate();
 
+  const renderChevrons = (count: number) => {
+    return (
+      <div className="flex flex-col gap-[2px] items-center">
+        {Array.from({ length: count }).map((_, i) => (
+          <div
+            key={i}
+            className="relative w-10 h-3"
+            style={{
+              clipPath: 'polygon(0 0, 50% 100%, 100% 0, 85% 0, 50% 70%, 15% 0)'
+            }}
+          >
+            <div className="absolute inset-0 bg-yellow-400" />
+            <div
+              className="absolute inset-0 bg-blue-900"
+              style={{
+                clipPath: 'polygon(5% 10%, 50% 85%, 95% 10%, 85% 10%, 50% 65%, 15% 10%)'
+              }}
+            />
+          </div>
+        ))}
+      </div>
+    );
+  };
+
   const courses = [
     {
       number: 1,
@@ -109,6 +133,9 @@ const Courses = () => {
                     {course.number}
                   </div>
                   <div className="text-xl font-semibold">{course.grade}</div>
+                </div>
+                <div className="absolute top-4 right-4">
+                  {renderChevrons(course.number)}
                 </div>
               </div>
               <CardContent className="p-6">
