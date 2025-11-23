@@ -125,7 +125,7 @@ const Index = () => {
         </Card>
 
         <div className="mt-8 text-center text-sm text-muted-foreground">
-          <p>© 2024 Кадетская школа. Все права защищены.</p>
+          <p>© 2025 Кадетская школа. Все права защищены.</p>
         </div>
       </div>
     </div>
