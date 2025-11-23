@@ -41,8 +41,16 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-orange-50">
-      <div className="container mx-auto px-4 py-12 max-w-7xl">
+    <div className="min-h-screen relative">
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url(https://cdn.poehali.dev/files/360005a5-c2bf-4011-a79b-831b4c0f8aec.jpg)',
+        }}
+      >
+        <div className="absolute inset-0 bg-white/85 backdrop-blur-sm" />
+      </div>
+      <div className="container mx-auto px-4 py-12 max-w-7xl relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-xl">
