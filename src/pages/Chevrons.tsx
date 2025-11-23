@@ -94,8 +94,12 @@ const Chevrons = () => {
               </h2>
             </div>
             <CardContent className="p-6">
-              <div className="bg-gray-100 rounded-lg flex items-center justify-center h-64 mb-4">
-                <p className="text-muted-foreground text-sm">Место для фото</p>
+              <div className="rounded-lg overflow-hidden h-64 mb-4">
+                <img 
+                  src="https://cdn.poehali.dev/files/8b98e216-a671-4af8-b8ee-3bacfcb5f9f7.jpg" 
+                  alt="Повседневный шеврон ФСО" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <p className="text-center text-base font-semibold text-secondary mb-2">
                 Левое плечо
@@ -114,8 +118,12 @@ const Chevrons = () => {
               </h2>
             </div>
             <CardContent className="p-6">
-              <div className="bg-gray-100 rounded-lg flex items-center justify-center h-64 mb-4">
-                <p className="text-muted-foreground text-sm">Место для фото</p>
+              <div className="rounded-lg overflow-hidden h-64 mb-4">
+                <img 
+                  src="https://cdn.poehali.dev/files/73de8613-d1cf-4bef-bcf6-0beda1885328.jpg" 
+                  alt="Повседневный школьный шеврон" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <p className="text-center text-base font-semibold text-secondary mb-2">
                 Правое плечо
