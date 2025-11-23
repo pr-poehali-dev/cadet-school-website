@@ -57,9 +57,7 @@ const Index = () => {
               <Icon name="School" size={32} className="text-white" />
             </div>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold text-secondary mb-4 leading-tight">
-            Кадетская школа
-          </h1>
+          <h1 className="text-5xl md:text-6xl font-bold text-secondary mb-4 leading-tight">Кадетская школа №145</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Информационный портал для кадетов: форма, шевроны, курсовки и звания
           </p>
